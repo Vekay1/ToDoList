@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    margin-left: 50px;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #a5ccdb;
+    padding-left: 30px;
+}
+.todo__value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    flex-grow: 1;
+    padding-left: 30px;
+
+
+}
+#close{
+    list-style-image: url(../img/close.png);
+}
+.todo:has(.todo__checkbox:checked){
+    color: black;
+    background-color: #eeeeee;
+    text-decoration: line-through;
+    /* order: 1;  зачеркнуті стануть вниз */
+}
+.todo:nth-child(even) {
+    background-color: #acd8e5;
+}
+h1{
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 50px;
+}
+.note{
+    position: absolute;
+    left: 500px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
